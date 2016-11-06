@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- JS -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+<!-- jumbotron -->
+<div class="container-fluid">
+<br>
+  <div class="jumbotron">
+    <h1>Hangman</h1> 
+    <p>Can you guess the correct country?</p> 
+  </div>
+</div>
+
+<!-- main content -->
+<div class="container">
+	<div class="row">
+		<!-- left column that displays images -->
+		<div class="col-md-6">
+			<h1>Guess the country!</h1>
+			<hr>
+			<img src="assets/images/blankflag.jpg">
+		</div>
+		<!-- right column that displays instructions and user input -->
+		<div class="col-md-6">
+			<h1>Press any key to get started!</h2>
+			<hr>
+			<h1>Wins: <span id="winCount"></span></h1>
+			<br>
+			<h1>Current Word: <span id="curretWord"></span></h1>
+			<br>
+			<h1>Number of Guesses Remaining: <span id="guessCounter"></span></h1>
+			<br>
+			<h1>Letters Already Guessed: <span id="guesses"></span></h1>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
